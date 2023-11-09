@@ -26,6 +26,14 @@ Route::get('/status', function () {
     return view('main.status');
 })->middleware(['auth', 'verified'])->name('status');
 
+Route::get('/settings', function () {
+    return view('main.settings');
+})->middleware(['auth', 'verified'])->name('settings');
+
+Route::get('/user', function () {
+    return view('main.user');
+})->middleware(['auth', 'verified'])->name('user');
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

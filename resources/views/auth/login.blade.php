@@ -9,7 +9,7 @@
 
         <!-- Email Address -->
         <div class="bg-blue-100 rounded-2xl p-3 my-5">
-            <x-input-label for="email" :value="__('Username')" />
+            <x-input-label for="email" :value="__('Email')" />
             <div class="flex border-b-2 items-center p-2">
                 <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30">
                     <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47

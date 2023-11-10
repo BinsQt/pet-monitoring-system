@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+[x-cloak] {
+    display: none !important;
+ }
+
+
+.ekg {
+    fill: none;
+    stroke: #d70000;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    opacity: 0;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    animation: ekg 2s linear forwards infinite;
+}
+
+@keyframes ekg {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      stroke-dashoffset: 2000;
+    }
+    99% {
+      opacity: 0;
+      stroke-dashoffset: 3000;
+    }
+    100% {
+      stroke-dashoffset: 1000;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .l-screen{
+        visibility: collapse;
+    }
+}

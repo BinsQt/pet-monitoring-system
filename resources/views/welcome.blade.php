@@ -10,7 +10,7 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+
 
         <!-- Styles -->
 
@@ -25,5 +25,12 @@
     </head>
     <body>
     @include('index/index-header')
+        <div class="m-auto w-1/2 ">
+            <div class="mx-auto w-full flex items-center justify-center">
+              <x-application-logo />
+            </div>
+
+        </div>
+
     </body>
 </html>
